@@ -1,5 +1,4 @@
-﻿using Codeflix.Catalog.Domain.Exceptions;
-using Codeflix.Catalog.Domain.SeedWork;
+﻿using Codeflix.Catalog.Domain.SeedWork;
 using Codeflix.Catalog.Domain.Validation;
 
 namespace Codeflix.Catalog.Domain.Entity;
@@ -11,7 +10,7 @@ public class Category : AggregateRoot
 
     public bool IsActive { get; private set; }
 
-    public DateTime CreatedAt { get; set; }
+    public DateTime CreatedAt { get; private set; }
 
     public Category(string name, string description, bool isActive = true)
         : base()
