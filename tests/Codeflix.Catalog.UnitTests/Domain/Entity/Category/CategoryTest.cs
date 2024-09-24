@@ -212,7 +212,7 @@ public class CategoryTest
 
     [Theory(DisplayName = nameof(UpdateErrorWhenNameIsLessThan3Characters))]
     [Trait("Domain", "Category - Aggregates")]
-   [MemberData(nameof(GetNamesWithLessThan3Characters), parameters: 10)]
+    [MemberData(nameof(GetNamesWithLessThan3Characters), parameters: 10)]
     public void UpdateErrorWhenNameIsLessThan3Characters(string invalidName)
     {
         var category = _categoryTestFixture.GetValidCategory();
