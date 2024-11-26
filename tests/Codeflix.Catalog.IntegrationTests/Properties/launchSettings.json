@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Codeflix.Catalog.IntegrationTests": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:65387;http://localhost:65394"
+    }
+  }
+}
