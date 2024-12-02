@@ -87,4 +87,9 @@ public class CategoryRepository : ICategoryRepository
        => await _categories.AsNoTracking()
            .Where(category => ids.Contains(category.Id))
            .ToListAsync();
+
+    public Task<IReadOnlyList<Guid>> GetIdsListByIds(List<Guid> ids, CancellationToken cancellationToken)
+    {
+        throw new NotImplementedException();
+    }
 }
