@@ -22,6 +22,8 @@ public class Genre : AggregateRoot
         IsActive = isActive;
         CreatedAt = DateTime.Now;
         _categories = new List<Guid>();
+
+        Validate();
     }
 
     public void Activate()
